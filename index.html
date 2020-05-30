@@ -1,0 +1,1762 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Calculadora para Estimaci&oacute;n de Watts en Generadores</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.Estilo2 {font-size: 14px}
+.Estilo3 {font-size: 14}
+.Estilo7 {
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+-->
+</style>
+</head>
+
+<script type="text/javascript" src="celdas.js"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.1generadores.com/img/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.1generadores.com/img/favicon.ico" />
+<body>
+<form action="" id='forma' >
+  <table width="700"  border="1" align="center" cellpadding="3" cellspacing="0" bordercolor="#E5E5E5">
+    <tr> 
+      <td> 
+        <div align="center"><img src="http://www.1generadores.com/img/1generadores.jpg" width="233" height="106"></div>
+      </td>
+    </tr>
+    <tr> 
+      <td bordercolor="#000066" bgcolor="#000066"> 
+        <div align="center"><strong><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif" size="3">Calculadora 
+          para Estimar Consumo de Watts</font><font size="3"><b><font face="Arial, Helvetica, sans-serif"> 
+          </font></b></font></font></strong></div>
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top"> 
+        <table width="700" height="21%"  border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td height="79"> 
+              <table width="100%"  border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+                <tr align="center" bordercolor="#FFFFFF"> 
+                  <td width="30%"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Artefacto</font></span></td>
+                  <td width="19%"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Indicar 
+                    Cantidad </font></span></td>
+                  <td width="11%"> 
+                    <p class="Estilo2"><font face="Arial, Helvetica, sans-serif">Watts 
+                      Consumo x Unidad<br>
+                      x Hora
+                    </font></p>                  </td>
+                  <td width="10%"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Watts 
+                    Arranque<br>
+                    Requerido </font></span></td>
+                  <td width="15%"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Watts 
+                    <br>
+                    Consumo </font></span></td>
+                  <td width="15%"> 
+                    <p class="Estilo2"><font face="Arial, Helvetica, sans-serif">Watts 
+                      <br>
+                      Pico M&aacute;ximo </font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066" class="Estilo7"><b>Electrodom&eacute;sticos</b></td>
+    </tr>
+    <tr> 
+      <td valign="top"> 
+        <table width="700" border="1"  cellpadding="3" cellspacing="0" bordercolor="#FFFFFF">
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td width="158" height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces- 
+              40 vatios incandescentes:</font></span></td>
+            <td width="129" bgcolor="#DFDFDF"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect1"  id="txtelect1" type="text" size="14"  onblur="javascript:calculofila('txtelect1');">
+                </font></div>
+            </td>
+            <td width="62" align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect1'>40</label> 
+                </font></div>
+            </td>
+            <td width="67" align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect2'>40</label> 
+                </font></div>
+            </td>
+            <td width="102" style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect1'>_<label> 
+                </font></div>
+            </td>
+            <td width="106" colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect2'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces- 
+              60 vatios incandescentes:</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect2" id="txtelect2" type="text" size="14" onblur="javascript:calculofila('txtelect2');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect3'>60</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect4'>60</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect3'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect4'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces- 
+              75 vatios incandescente</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect3" id="txtelect3" type="text" size="14" onblur="javascript:calculofila('txtelect3');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect5'>75</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect6'>75</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect5'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect6'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces- 
+              100 vatios incandescente:</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect4"  id="txtelect4" type="text" size="14" onblur="javascript:calculofila('txtelect4');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect7'>100</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect8'>100</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect7'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect8'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces 
+              - 100 vatios fluourescent&nbsp;</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input  name="txtelect5"  id="txtelect5" type="text" size="14" onblur="javascript:calculofila('txtelect5');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect9'>30</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect10'>30</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect9'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultelect10'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces 
+              - 75 vatios fluourescent</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect6" type="text" id="txtelect6" size="14" onblur="javascript:calculofila('txtelect6');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect11'>20</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect12'>20</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect11'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect12'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces 
+              - 60 vatios fluourescent&nbsp;</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect7" type="text" id="txtelect7" size="14" onblur="javascript:calculofila('txtelect7');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect13'>16</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect14'>16</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect13'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect14'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Luces 
+              - 40 vatios fluourescent</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect8" type="text" id="txtelect8" size="14" onblur="javascript:calculofila('txtelect8');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect15'>11</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect16'>11</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect15'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect16'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Nevera 
+              (1 / 4 HP)</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect9" type="text" id="txtelect9" size="14" onblur="javascript:calculofila('txtelect9');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect17'>500</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect18'>2000</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect17'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect18'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Congelador 
+              (1 / 4 HP)</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect10" type="text" id="txtelect10" size="14" onblur="javascript:calculofila('txtelect10');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect19'>600</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect20'>1200</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect19'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect20'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Bomba 
+              de sumidero</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect11" type="text" id="txtelect11" size="14" onblur="javascript:calculofila('txtelect11');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect21'>800</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect22'>2000</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect21'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect22'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Bomba 
+              de agua (1 HP)</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect12" type="text" id="txtelect12" size="14" onblur="javascript:calculofila('txtelect12');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect23'>1900</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect24'>5700</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect23'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect24'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Bomba 
+              de agua (2 CV)</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect13" type="text" id="txtelect13" size="14" onblur="javascript:calculofila('txtelect13');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect25'>2500</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect26'>7500</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect25'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect26'>_<label></font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Calentador 
+              de agua el&eacute;ctrico</font></span></td>
+            <td> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"> 
+                <input name="txtelect14" type="text" id="txtelect14"  size="14" onblur="javascript:calculofila('txtelect14');">
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect27'>4000</label> 
+                </font></div>
+            </td>
+            <td align=3Dright> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='elect28'>4000</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect27'>_<label></font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='resultelect28'>_<label></font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066" class="Estilo7"> <b>Clima/Enfriamiento</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td width="203" height="3"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Deshumidificador</font></span></td>
+            <td width="102" align="right"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtclima1" type="text" id="txtclima1"  size="14" onblur="javascript:calculofila('txtclima1');">
+              </font></td>
+            <td width="57" align=3Dright> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima1'>650</label></font></div>
+            </td>
+            <td width="69" align=3Dright> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima2'>800</label></font></div>
+            </td>
+            <td width="92" style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima1'>_<label> 
+                </font></div>
+            </td>
+            <td width="103" colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima2'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3" width="203"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Ventilador</font></span></td>
+            <td align="right" width="102"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtclima2" type="text" id="txtclima2"  size="14" onblur="javascript:calculofila('txtclima2');">
+              </font></td>
+            <td align=3Dright width="57"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima3'>800</label></font></div>
+            </td>
+            <td align=3Dright width="69"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima4'>2000</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="92"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima3'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="103"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima4'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3" width="203"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Aire 
+              Acondicionado de <br>
+              ventana</font></span></td>
+            <td align="right" width="102"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtclima3" type="text" id="txtclima3"  size="14" onblur="javascript:calculofila('txtclima3');">
+              </font></td>
+            <td align=3Dright width="57"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima5'>1200</label></font></div>
+            </td>
+            <td align=3Dright width="69"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima6'>4800</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="92"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima5'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="103"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima6'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3" width="203"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Aire 
+              Central (10000 BTU)</font></span></td>
+            <td align="right" width="102"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtclima4" type="text" id="txtclima4"  size="14" onblur="javascript:calculofila('txtclima4');">
+              </font></td>
+            <td align=3Dright width="57"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima7'>1500</label></font></div>
+            </td>
+            <td align=3Dright width="69"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima8'>6000</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="92"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima7'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="103"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima8'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3" width="203"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Aire 
+              Central (24000 BTU)</font></span></td>
+            <td align="right" width="102"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtclima5" type="text" id="txtclima5"  size="14" onblur="javascript:calculofila('txtclima5');">
+              </font></td>
+            <td align=3Dright width="57"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima9'>3800</label> 
+                </font></div>
+            </td>
+            <td align=3Dright width="69"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima10'>15000</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="92"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima9'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="103"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima10'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3" width="203"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif">Aire 
+              Central (40000 BTU)</font></span></td>
+            <td align="right" width="102"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtclima6" type="text" id="txtclima6"  size="14" onblur="javascript:calculofila('txtclima6');">
+              </font></td>
+            <td align=3Dright width="57"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima11'>6000</label></font></div>
+            </td>
+            <td align=3Dright width="69"> 
+              <div align="right" class="Estilo2"><font face="Arial, Helvetica, sans-serif"><label id='clima12'>24000</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="92"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima11'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="103"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultclima12'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066"><span class="Estilo7"><b>Habitaci&oacute;n de Familia 
+        </b></span></td>
+    </tr>
+    <tr> 
+      <td valign="top"> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2"> 
+            <td width="158" height="3" bgcolor="#DFDFDF"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">Cargadores 
+              de tel&eacute;fono Celular</font></span></td>
+            <td width="119" align="right" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab1" type="text" id="txthab1"  size="14" onblur="javascript:calculofila('txthab1');">
+              </font></td>
+            <td width="52" align=3Dright bgcolor="#DFDFDF"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab1'>25</label></font></div>
+            </td>
+            <td width="65" align=3Dright bgcolor="#DFDFDF"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab2'>35</label></font></div>
+            </td>
+            <td width="93" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab1'>_<label> 
+                </font></div>
+            </td>
+            <td width="93" colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab2'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">Computadores, 
+              CPU, monitor, impresora&nbsp;</font></span></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab2" type="text" id="txthab2"  size="14" onblur="javascript:calculofila('txthab2');">
+              </font></td>
+            <td align=3Dright bgcolor="#FFFFFF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab3'>1500</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#FFFFFF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab4'>1500</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab3'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab4'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">Sistema 
+              de Bateria UPS</font></span></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab3" type="text" id="txthab3"  size="14" onblur="javascript:calculofila('txthab3');">
+              </font></td>
+            <td align=3Dright bgcolor="#DFDFDF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab5'>2000</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#DFDFDF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab6'>2500</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab5'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab6'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">Reproductor 
+              de CD</font></span></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab4" type="text" id="txthab4"  size="14" onblur="javascript:calculofila('txthab4');">
+              </font></td>
+            <td align=3Dright bgcolor="#FFFFFF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab7'>100</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#FFFFFF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab8'>100</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab7'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab8'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">VCR</font></span></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab5" type="text" id="txthab5"  size="14" onblur="javascript:calculofila('txthab5');">
+              </font></td>
+            <td align=3Dright bgcolor="#DFDFDF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab9'>100</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#DFDFDF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab10'>100</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab9'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab10'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">Radio</font></span></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab6" type="text" id="txthab6"  size="14" onblur="javascript:calculofila('txthab6');">
+              </font></td>
+            <td align=3Dright bgcolor="#FFFFFF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab11'>100</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#FFFFFF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab12'>100</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab11'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab12'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">TV 
+              - 19 &quot;</font></span></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab7" type="text" id="txthab7"  size="14" onblur="javascript:calculofila('txthab7');">
+              </font></td>
+            <td align=3Dright bgcolor="#DFDFDF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab13'>70</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#DFDFDF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab14'>100</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab13'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab14'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">TV 
+              - 25 &quot;</font></span></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab8" type="text" id="txthab8"  size="14" onblur="javascript:calculofila('txthab8');">
+              </font></td>
+            <td align=3Dright bgcolor="#FFFFFF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab15'>150</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#FFFFFF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab16'>175</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab15'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab16'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">TV 
+              - 36 &quot;</font></span></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab9" type="text" id="txthab9"  size="14" onblur="javascript:calculofila('txthab9');">
+              </font></td>
+            <td align=3Dright bgcolor="#DFDFDF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab17'>180</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#DFDFDF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab18'>220</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab17'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab18'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">TV 
+              Plasma 32 &quot;</font></span></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab10" type="text" id="txthab10"  size="14" onblur="javascript:calculofila('txthab10');">
+              </font></td>
+            <td align=3Dright bgcolor="#FFFFFF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab19'>140</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#FFFFFF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab20'>160</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab19'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab20'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">TV 
+              Plasma 47 &quot;</font></span></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab11" type="text" id="txthab11"  size="14" onblur="javascript:calculofila('txthab11');">
+              </font></td>
+            <td align=3Dright bgcolor="#DFDFDF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab21'>190</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#DFDFDF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab22'>220</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab21'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab22'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td height="3" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">TV 
+              Plasma 54 &quot;</font></span></td>
+            <td align="right" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab12" type="text" id="txthab12"  size="14" onblur="javascript:calculofila('txthab12');">
+              </font></td>
+            <td align=3Dright width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab23'>380</label></font></div>
+            </td>
+            <td align=3Dright width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab24'>410</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab23'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab24'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="204"><span class="Estilo3"><font face="Arial, Helvetica, sans-serif">Receptor 
+              est&eacute;reo</font></span></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txthab13" type="text" id="txthab13"  size="14" onblur="javascript:calculofila('txthab13');">
+              </font></td>
+            <td align=3Dright bgcolor="#DFDFDF" width="52"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab25'>420</label></font></div>
+            </td>
+            <td align=3Dright bgcolor="#DFDFDF" width="65"> 
+              <div align="right" class="Estilo3"><font face="Arial, Helvetica, sans-serif"><label id='hab26'>420</label></font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab25'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right" class="Estilo3"> <font face="Arial, Helvetica, sans-serif"><label id='resulthab26'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066" class="Estilo7"><b>Cocina</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td width="207" height="3" class=Estilo2 bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Horno 
+              de microondas compacto</font></td>
+            <td width="115" align="right" class="Estilo2" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina1" type="text" id="txtcocina1"  size="14" onblur="javascript:calculofila('txtcocina1');">
+              </font></td>
+            <td width="55" align=right class="Estilo2" bgcolor="#FFFFFF"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina1">900</label> 
+              </font></span></td>
+            <td width="68" align=right class="Estilo2" bgcolor="#FFFFFF"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina2">900</label> 
+              </font></span></td>
+            <td width="85" class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina1'>_<label> 
+                </font></div>
+            </td>
+            <td width="96" colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina2'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#DFDFDF" width="207"><font face="Arial, Helvetica, sans-serif">Microondas 
+              grande</font></td>
+            <td align="right" class="Estilo2" bgcolor="#DFDFDF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina2" type="text" id="txtcocina2"  size="14" onblur="javascript:calculofila('txtcocina2');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina3">1500</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina4">1500</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina3'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina4'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#FFFFFF" width="207"><font face="Arial, Helvetica, sans-serif">Liquadora</font></td>
+            <td align="right" class="Estilo2" bgcolor="#FFFFFF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina3" type="text" id="txtcocina3"  size="14" onblur="javascript:calculofila('txtcocina3');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#FFFFFF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina5">300</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#FFFFFF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina6">900</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina5'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina6'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#DFDFDF" width="207"><font face="Arial, Helvetica, sans-serif">Cafetera</font></td>
+            <td align="right" class="Estilo2" bgcolor="#DFDFDF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina4" type="text" id="txtcocina4"  size="14" onblur="javascript:calculofila('txtcocina4');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina7">1500</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina8">1500</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina7'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina8'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#FFFFFF" width="207"><font face="Arial, Helvetica, sans-serif">Hornilla 
+              (1 elemento)</font></td>
+            <td align="right" class="Estilo2" bgcolor="#FFFFFF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina5" type="text" id="txtcocina5"  size="14" onblur="javascript:calculofila('txtcocina5');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#FFFFFF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina9">1500</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#FFFFFF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina10">1500</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina9'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina10'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#DFDFDF" width="207"><font face="Arial, Helvetica, sans-serif">Cocinas 
+              el&eacute;ctricas <br>
+              (4 elementos con horno)</font></td>
+            <td align="right" class="Estilo2" bgcolor="#DFDFDF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina6" type="text" id="txtcocina6"  size="14" onblur="javascript:calculofila('txtcocina6');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina11">3500</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina12">3500</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina11'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina12'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#FFFFFF" width="207"><font face="Arial, Helvetica, sans-serif">Tostadora 
+              (2-Posiciones)</font></td>
+            <td align="right" class="Estilo2" bgcolor="#FFFFFF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina7" type="text" id="txtcocina7"  size="14" onblur="javascript:calculofila('txtcocina7');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#FFFFFF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina13">1000</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#FFFFFF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina14">1600</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina13'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina14'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt'> 
+            <td height="3" class=Estilo2 bgcolor="#DFDFDF" width="207"><font face="Arial, Helvetica, sans-serif">Tostadora 
+              (4-Posiciones)</font></td>
+            <td align="right" class="Estilo2" bgcolor="#DFDFDF" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina8" type="text" id="txtcocina8"  size="14" onblur="javascript:calculofila('txtcocina8');">
+              </font></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina15">2000</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" bgcolor="#DFDFDF" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina16">3200</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina15'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina16'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#FFFFFF"> 
+            <td height="3" class=Estilo2 width="207"><font face="Arial, Helvetica, sans-serif">Lavavajillas 
+              (con secador)</font></td>
+            <td align="right" class="Estilo2" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina9" type="text" id="txtcocina9"  size="14" onblur="javascript:calculofila('txtcocina9');">
+              </font></td>
+            <td align=right class="Estilo2" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina17">1500</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina18">3000</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina17'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina18'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr height=3D17 style=3D'height:12.75pt' bgcolor="#DFDFDF"> 
+            <td height="3" class=Estilo2 width="207"><font face="Arial, Helvetica, sans-serif">Horno 
+              El&eacute;ctrico</font></td>
+            <td align="right" class="Estilo2" width="115"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtcocina10" type="text" id="txtcocina10"  size="14" onblur="javascript:calculofila('txtcocina10');">
+              </font></td>
+            <td align=right class="Estilo2" width="55"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina19">3410</label> 
+              </font></span></td>
+            <td align=right class="Estilo2" width="68"><span class="Estilo2"> 
+              <font face="Arial, Helvetica, sans-serif"><label id="cocina20">3410</label> 
+              </font></span></td>
+            <td class="Estilo2" style=3D'mso-ignore:colspan' width="85"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina19'>_<label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 class="Estilo2" style=3D'mso-ignore:colspan' width="96"> 
+              <div align="right" class="Estilo2"> <font face="Arial, Helvetica, sans-serif"><label id='resultcocina20'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066" class="Estilo7"><b>Equipos de Lavander&iacute;a </b></td>
+    </tr>
+    <tr> 
+      <td valign="top"> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bordercolor="#FFFFFF" bgcolor="#FFFFFF"> 
+            <td width="205" height="3"><font face="Arial, Helvetica, sans-serif">Plancha</font></td>
+            <td width="118" align="right"> 
+			<font face="Arial, Helvetica, sans-serif"> <input name="txtlavan1" type="text" id="txtlavan1"  size="14" onblur="javascript:calculofila('txtlavan1');"></font></td>
+            <td width="56" align=right><font face="Arial, Helvetica, sans-serif"><label id="lavan1">1200</label></font></td>
+            <td width="67" align=right><font face="Arial, Helvetica, sans-serif"><label id="lavan2">1200</label></font></td>
+            <td width="85" style=3D'mso-ignore:colspan'> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan1'>_<label> </font></div>
+            </td>
+            <td width="95" style=3D'mso-ignore:colspan'> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan2'>_<label> </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bordercolor="#FFFFFF"> 
+            <td height="3" width="205" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Lavadora</font></td>
+            <td align="right" width="118" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtlavan2" type="text" id="txtlavan2"  size="14" onblur="javascript:calculofila('txtlavan2');">
+              </font></td>
+            <td align=right width="56" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="lavan3">1150</label></font></td>
+            <td align=right width="67" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="lavan4">3400</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="85" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan3'>_<label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="95" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan4'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bordercolor="#FFFFFF" bgcolor="#FFFFFF"> 
+            <td height="3" width="205"><font face="Arial, Helvetica, sans-serif">Secadora 
+              de ropa (combustible gas/el&eacute;ctrico)</font></td>
+            <td align="right" width="118"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtlavan3" type="text" id="txtlavan3"  size="14" onblur="javascript:calculofila('txtlavan3');">
+              </font></td>
+            <td align=right width="56"><font face="Arial, Helvetica, sans-serif"><label id="lavan5">700</label></font></td>
+            <td align=right width="67"><font face="Arial, Helvetica, sans-serif"><label id="lavan6">2500</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="85"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan5'>_<label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="95"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan6'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bordercolor="#FFFFFF"> 
+            <td height="3" width="205" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Secadora 
+              de ropa el&eacute;ctrica</font></td>
+            <td align="right" width="118" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtlavan4" type="text" id="txtlavan4"  size="14" onblur="javascript:calculofila('txtlavan4');">
+              </font></td>
+            <td align=right width="56" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="lavan7">5400</label></font></td>
+            <td align=right width="67" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="lavan8">6750</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="85" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan7'>_<label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="95" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultlavan8'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066" class="Estilo7"><b>Confort</b></td>
+    </tr>
+    <tr> 
+      <td valign="top"> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td width="204" height="3" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Secador 
+              de Cabello</font></td>
+            <td width="119" align="right" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtconfort1" type="text" id="txtconfort1"  size="14" onblur="javascript:calculofila('txtconfort1');">
+              </font></td>
+            <td width="56" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="confort1">1250</label></font></td>
+            <td width="65" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="confort2">1350</label></font></td>
+            <td width="86" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">&nbsp;<label id='resultconfort1'>_<label></font></td>
+            <td width="96" colspan=2 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconfort2'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Rizador 
+              de Cabello</font></td>
+            <td align="right" width="119" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtconfort2" type="text" id="txtconfort2"  size="14" onblur="javascript:calculofila('txtconfort2');">
+              </font></td>
+            <td align=right width="56" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="confort3">80</label></font></td>
+            <td align="right" style=3D'mso-ignore:colspan' width="65" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="confort4">80</label></font></td>
+            <td align="right" style=3D'mso-ignore:colspan' width="86" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">&nbsp;<label id='resultconfort3'>_<label></font></td>
+            <td style=3D'mso-ignore:colspan' width="96" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconfort4'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Recargador 
+              de Cepillo de Dientes y Afeitadora</font></td>
+            <td align="right" width="119" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtconfort3" type="text" id="txtconfort3"  size="14" onblur="javascript:calculofila('txtconfort3');">
+              </font></td>
+            <td align=right width="56" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="confort5">30</label></font></td>
+            <td align=right width="65" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="confort6">30</label></font></td>
+            <td align=right width="86" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">&nbsp;<label id='resultconfort5'>_<label></font></td>
+            <td colspan=2 style=3D'mso-ignore:colspan' width="96" bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconfort6'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Aspiradora 
+              de Polvo<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" width="119" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtconfort4" type="text" id="txtconfort4"  size="14" onblur="javascript:calculofila('txtconfort4');">
+              </font></td>
+            <td align=right width="56" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="confort7">550</label></font></td>
+            <td align=right width="65" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="confort8">850</label></font></td>
+            <td align=right width="86" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">&nbsp;<label id='resultconfort7'>_<label></font></td>
+            <td colspan=2 style=3D'mso-ignore:colspan' width="96" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconfort8'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td height="3" width="204"><font face="Arial, Helvetica, sans-serif">M&aacute;quina 
+              de Coser</font></td>
+            <td align="right" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtconfort5" type="text" id="txtconfort5"  size="14" onblur="javascript:calculofila('txtconfort5');">
+              </font></td>
+            <td align=right width="56"><font face="Arial, Helvetica, sans-serif"><label id="confort9">100</label></font></td>
+            <td align=right width="65"><font face="Arial, Helvetica, sans-serif"><label id="confort10">180</label></font></td>
+            <td align=right width="86"><font face="Arial, Helvetica, sans-serif">&nbsp;<label id="resultconfort9">_<label></font></td>
+            <td colspan=2 style=3D'mso-ignore:colspan' width="96"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id="resultconfort10">_<label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066" class="Estilo7"><b>Herramientas El&eacute;ctricas</b></td>
+    </tr>
+    <tr> 
+      <td valign="top">
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2"> 
+            <td width="204" height="3" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Taladro 
+              (1/4 de pulgada)</font></td>
+            <td width="120" align="right" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtherrae1" type="text" id="txtherrae1"  size="14" onblur="javascript:calculofila('txtherrae1');">
+              </font></td>
+            <td width="57" align=right bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="electrica1">350</label></font></td>
+            <td width="62" align=right bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="electrica2">350</label></font></td>
+            <td width="95" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica1'>_<label> 
+                </font></div>
+            </td>
+            <td width="88" style=3D'mso-ignore:colspan' bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica2'>_<label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Taladro 
+              (1/2 pulgada)</font></td>
+            <td align="right" width="120" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1441" id="txtherrae2" size="14" onblur="javascript:calculofila('txtherrae2');">
+              </font></td>
+            <td align=right width="57" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="electrica3">600</label></font></td>
+            <td align=right width="62" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="electrica4">600</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="95" bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica3'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="88" bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica4'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Sierra 
+              Manual (7,25 pulgadas)</font></td>
+            <td align="right" width="120" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1442" id="txtherrae3" size="14" onblur="javascript:calculofila('txtherrae3');">
+              </font></td>
+            <td align=right width="57" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="electrica5">1800</label></font></td>
+            <td align=right width="62" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="electrica6">2600</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="95" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica5'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="88" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica6'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Sierra 
+              de Banda (14 pulgadas)</font></td>
+            <td align="right" width="120" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1443"  id="txtherrae4" size="14" onblur="javascript:calculofila('txtherrae4');">
+              </font></td>
+            <td align=right width="57" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="electrica7">1100</label></font></td>
+            <td align=right width="62" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="electrica8">1400</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="95" bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica7'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="88" bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica8'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Sierras 
+              Circulares (6,5 pulgadas)</font></td>
+            <td align="right" width="120" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input name="txtherrae5" type="text" id="txtherrae5"  size="14" onblur="javascript:calculofila('txtherrae5');">
+              </font></td>
+            <td align=right width="57" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="electrica9">800</label></font></td>
+            <td align=right width="62" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="electrica10">1400</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="95" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica9'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="88" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica10'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td height="3" width="204"><font face="Arial, Helvetica, sans-serif">Contador 
+              Multiple</font></td>
+            <td align="right" width="120"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1445"  id="txtherrae6" size="14" onblur="javascript:calculofila('txtherrae6');">
+              </font></td>
+            <td align=right width="57"><font face="Arial, Helvetica, sans-serif"><label id="electrica11">750</label></font></td>
+            <td align=right width="62"><font face="Arial, Helvetica, sans-serif"><label id="electrica12">1400</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="95"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica11'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="88"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica12'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#DFDFDF"> 
+            <td height="3" width="204"><font face="Arial, Helvetica, sans-serif">Taladros 
+              (3/8 pulgada)</font></td>
+            <td align="right" width="120"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1446"  size="14" id="txtherrae7" onblur="javascript:calculofila('txtherrae7');">
+              </font></td>
+            <td align=right width="57"><font face="Arial, Helvetica, sans-serif"><label id="electrica13">440</label></font></td>
+            <td align=right width="62"><font face="Arial, Helvetica, sans-serif"><label id="electrica14">600</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="95"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica13'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="88"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultelectrica14'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bordercolor="#FFFFFF" bgcolor="#000066"><b><span class="Estilo7">Herramientas 
+        de Construcci&oacute;n </span></b></td>
+    </tr>
+    <tr> 
+      <td valign="top"> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td width="204" height="3" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Compresor 
+              de Aire (1 HP)</font></td>
+            <td width="120" align="right" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1447"  size="14" id="txtherrac1" onblur="javascript:calculofila('txtherrac1');">
+              </font></td>
+            <td width="60" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="construccion1">1500</label></font></td>
+            <td width="59" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="construccion2">4500</label></font></td>
+            <td width="96" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion1'>_</label> 
+                </font></div>
+            </td>
+            <td width="87" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion2'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Lavadora 
+              de Alta Presi&oacute;n (1 HP)</font></td>
+            <td align="right" width="120" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1448"  size="14" id="txtherrac2" onblur="javascript:calculofila('txtherrac2');">
+              </font></td>
+            <td align=right width="60" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="construccion3">1200</label></font></td>
+            <td align=right width="59" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="construccion4">3600</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="96" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion3'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="87" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion4'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td height="3" width="204"><font face="Arial, Helvetica, sans-serif">Bomba 
+              Sumergible (400 gph)</font></td>
+            <td align="right" width="120"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1449"  size="14" id="txtherrac3" onblur="javascript:calculofila('txtherrac3');">
+              </font></td>
+            <td align=right width="60"><font face="Arial, Helvetica, sans-serif"><label id="construccion5">200</label></font></td>
+            <td align=right width="59"><font face="Arial, Helvetica, sans-serif"><label id="construccion6">400</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="96"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion5'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="87"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion6'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" width="204" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif">Sierra 
+              Electrica (1/2 HP)</font></td>
+            <td align="right" width="120" bgcolor="#DFDFDF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1450"  size="14" id="txtherrac4" onblur="javascript:calculofila('txtherrac4');">
+              </font></td>
+            <td align=right width="60" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="construccion7">900</label></font></td>
+            <td align=right width="59" bgcolor="#DFDFDF"><font face="Arial, Helvetica, sans-serif"><label id="construccion8">900</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="96" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion7'>_</label> 
+                </font></div>
+            </td>
+            <td style=3D'mso-ignore:colspan' width="87" bgcolor="#DFDFDF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultconstruccion8'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066"><b><span class="Estilo7">Motores El&eacute;ctricos 
+        de otros equipos </span></b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td width="202" height="3" bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Motor 
+              1 / 6 HP</font></td>
+            <td width="119" align="right" bgcolor="#FFFFFF"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1451"  size="14" id="txtmotor1" onblur="javascript:calculofila('txtmotor1');">
+              </font></td>
+            <td width="52" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="motor1">300</label></font></td>
+            <td width="78" align=right bgcolor="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><label id="motor2">850</label></font></td>
+            <td width="81" style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor1'>_</label> 
+                </font></div>
+            </td>
+            <td width="94" colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor2'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              1 / 4 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1452"  size="14" id="txtmotor2" onblur="javascript:calculofila('txtmotor2');">
+              </font></td>
+            <td align=right bgcolor="#DFDFDF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor3">400</label></font></td>
+            <td align=right bgcolor="#DFDFDF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor4">1150</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor3'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor4'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              1 / 3 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1453"  size="14" id="txtmotor3" onblur="javascript:calculofila('txtmotor3');">
+              </font></td>
+            <td align=right bgcolor="#FFFFFF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor5">475</label></font></td>
+            <td align=right bgcolor="#FFFFFF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor6">1325</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor5'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor6'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              1 / 2 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1454"  size="14" id="txtmotor4" onblur="javascript:calculofila('txtmotor4');">
+              </font></td>
+            <td align=right bgcolor="#DFDFDF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor7">650</label></font></td>
+            <td align=right bgcolor="#DFDFDF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor8">1800</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor7'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor8'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              3 / 4 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1455"  size="14" id="txtmotor5" onblur="javascript:calculofila('txtmotor5');">
+              </font></td>
+            <td align=right bgcolor="#FFFFFF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor9">900</label></font></td>
+            <td align=right bgcolor="#FFFFFF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor10">2500</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor9'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor10'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              1 HP</font></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1456"  size="14" id="txtmotor6" onblur="javascript:calculofila('txtmotor6');">
+              </font></td>
+            <td align=right bgcolor="#DFDFDF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor11">1000</label></font></td>
+            <td align=right bgcolor="#DFDFDF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor12">2800</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor11'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor12'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#FFFFFF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              1-1/2 HP</font></td>
+            <td align="right" bgcolor="#FFFFFF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1457"  size="14" id="txtmotor7" onblur="javascript:calculofila('txtmotor7');">
+              </font></td>
+            <td align=right bgcolor="#FFFFFF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor13">1700</label></font></td>
+            <td align=right bgcolor="#FFFFFF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor14">4800</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor13'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#FFFFFF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor14'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              2 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" bgcolor="#DFDFDF" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1458"  size="14" id="txtmotor8" onblur="javascript:calculofila('txtmotor8');">
+              </font></td>
+            <td align=right bgcolor="#DFDFDF" width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor15">2000</label></font></td>
+            <td align=right bgcolor="#DFDFDF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor16">5900</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor15'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor16'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td height="3" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              3 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1459"  size="14" id="txtmotor9" onblur="javascript:calculofila('txtmotor9');">
+              </font></td>
+            <td align=right width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor17">3200</label></font></td>
+            <td align=right width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor18">9000</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor17'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor18'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#DFDFDF"> 
+            <td height="3" width="202"><font face="Arial, Helvetica, sans-serif">Motor 
+              5 HP<span style=3D'mso-spacerun:yes'>&nbsp;</span></font></td>
+            <td align="right" width="119"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1460"  size="14" id="txtmotor10" onblur="javascript:calculofila('txtmotor10');">
+              </font></td>
+            <td align=right width="52"><font face="Arial, Helvetica, sans-serif"><label id="motor19">5000</label></font></td>
+            <td align=right width="78"><font face="Arial, Helvetica, sans-serif"><label id="motor20">13750</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="81"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor19'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="94"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultmotor20'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066"><b><span class="Estilo7">Otros Art&iacute;culos Importantes 
+        </span></b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td width="201" height="3"><font face="Arial, Helvetica, sans-serif">Sistema 
+              de Seguridad</font></td>
+            <td width="120" align="right"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1461"  size="14" id="txtotros1" onblur="javascript:calculofila('txtotros1');">
+              </font></td>
+            <td width="51" align=right><font face="Arial, Helvetica, sans-serif"><label id="otros1">500</label></font></td>
+            <td width="77" align=right><font face="Arial, Helvetica, sans-serif"><label id="otros2">500</label></font></td>
+            <td width="80" style=3D'mso-ignore:colspan'> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultotros1'>_</label> 
+                </font></div>
+            </td>
+            <td width="97" colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultotros2'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="201"><font face="Arial, Helvetica, sans-serif">Congelador</font></td>
+            <td align="right" bgcolor="#DFDFDF" width="120"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1462"  size="14" id="txtotros2" onblur="javascript:calculofila('txtotros2');">
+              </font></td>
+            <td align=right bgcolor="#DFDFDF" width="51"><font face="Arial, Helvetica, sans-serif"><label id="otros3">500</label></font></td>
+            <td align=right bgcolor="#DFDFDF" width="77"><font face="Arial, Helvetica, sans-serif"><label id="otros4">1000</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="80"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultotros3'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="97"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultotros4'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td height="3" width="201"><font face="Arial, Helvetica, sans-serif">Puerta 
+              de Garage (1 / 3 HP)</font></td>
+            <td align="right" width="120"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1464"  size="14" id="txtotros4" onblur="javascript:calculofila('txtotros4');">
+              </font></td>
+            <td align=right width="51"><font face="Arial, Helvetica, sans-serif"><label id="otros7">750</label></font></td>
+            <td align=right width="77"><font face="Arial, Helvetica, sans-serif"><label id="otros8">750</label></font></td>
+            <td style=3D'mso-ignore:colspan' width="80"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultotros7'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' width="97"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultotros8'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#000066"><b><span class="Estilo7">Calefacci&oacute;n</span></b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="700" border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17 bgcolor="#FFFFFF"> 
+            <td width="200" height="3"><font face="Arial, Helvetica, sans-serif">Calefactor 
+              con Ventilador (1/2 HP)</font></td>
+            <td width="121" align="right"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1465"  size="14" id="txtcalefa1" onblur="javascript:calculofila('txtcalefa1');">
+              </font></td>
+            <td width="50" align=right><font face="Arial, Helvetica, sans-serif"><label id="calefactor1">875</label></font></td>
+            <td width="78" align=right><font face="Arial, Helvetica, sans-serif"><label id="calefactor2">2300</label></font></td>
+            <td width="84" style=3D'mso-ignore:colspan'> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultcalefactor1'>_</label> 
+                </font></div>
+            </td>
+            <td width="93" colspan=3D5 style=3D'mso-ignore:colspan'> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultcalefactor2'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+          <tr class="Estilo2" style=3D'height:12.75pt' height=3D17> 
+            <td height="3" bgcolor="#DFDFDF" width="200"><font face="Arial, Helvetica, sans-serif">Calefactor 
+              Estatico</font></td>
+            <td align="right" bgcolor="#DFDFDF" width="121"> <font face="Arial, Helvetica, sans-serif"> 
+              <input type="text" name="textfield1466"  size="14" id="txtcalefa2" onblur="javascript:calculofila('txtcalefa2');">
+              </font></td>
+            <td align=right bgcolor="#DFDFDF" width="50"><font face="Arial, Helvetica, sans-serif"><label id="calefactor3">1800</label></font></td>
+            <td align=right bgcolor="#DFDFDF" width="78"><font face="Arial, Helvetica, sans-serif"><label id="calefactor4">1800</label></font></td>
+            <td style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="84"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultcalefactor3'>_</label> 
+                </font></div>
+            </td>
+            <td colspan=3D5 style=3D'mso-ignore:colspan' bgcolor="#DFDFDF" width="93"> 
+              <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='resultcalefactor4'>_</label> 
+                </font></div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center"> 
+          <table width="100%"  border="1" cellpadding="5" cellspacing="0" bordercolor="#FFFFFF">
+            <tr bgcolor="#000066"> 
+              <td width="71%"><font face="Arial, Helvetica, sans-serif"></font></td>
+              <td width="15%"> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Total 
+                  Requerido</b> </font></div>
+              </td>
+              <td width="14%"> 
+                <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Total 
+                  Pico M&aacute;ximo</b> </font></div>
+              </td>
+            </tr>
+            <tr bgcolor="#FFFFFF"> 
+              <td width="71%"> 
+                <div align="right"><font face="Arial, Helvetica, sans-serif">Totales 
+                  Watts </font></div>
+              </td>
+              <td width="15%"> 
+                <div align="right"><font face="Arial, Helvetica, sans-serif"><label id='totaleskwattsrequerido'>_</label></font></div>
+              </td>
+              <td width="14%"> 
+                <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='totaleskwattspique'>_</label> 
+                  </font></div>
+              </td>
+            </tr>
+            <tr bgcolor="#DFDFDF"> 
+              <td width="71%"> 
+                <div align="right"><font face="Arial, Helvetica, sans-serif">Totales 
+                  Vatios </font></div>
+              </td>
+              <td width="15%"> 
+                <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='totaleskvarequerido'>_</label> 
+                  </font></div>
+              </td>
+              <td width="14%"> 
+                <div align="right"> <font face="Arial, Helvetica, sans-serif"><label id='totaleskvapique'>_</label> 
+                  </font></div>
+              </td>
+            </tr>
+            <tr bgcolor="#000066"> 
+              <td width="71%"> 
+                <div align="right"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Totales 
+                  Kwatts</b></font></div>
+              </td>
+              <td width="15%"> 
+                <div align="right"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><label id='totaleskilowattsrequerido'>_</label></font></b></div>
+              </td>
+              <td width="14%"> 
+                <div align="right"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><label id='totaleskilowattspique'>_</label></font></b></div>
+              </td>
+            </tr>
+            <tr bgcolor="#000066"> 
+              <td width="71%"> 
+                <div align="right"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Totales 
+                  Kvatios</b></font></div>
+              </td>
+              <td width="15%"> 
+                <div align="right"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><label id='totaleskilovarequerido'>_</label></font></b></div>
+              </td>
+              <td width="14%"> 
+                <div align="right"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><label id='totaleskilovapique'>_</label></font></b></div>
+              </td>
+            </tr>
+          </table>
+          <strong> 
+          <input type="button" name="Submit" value="Restablecer" onclick="javascript:llevaracero();">
+          <input type="submit" name="Submit2" value="Cerrar" onclick="window.close();">
+          </strong></div>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+<!-- Diseñado y Desarrollado por Ing. Hermes Tremaria Marzo 2010 -->
